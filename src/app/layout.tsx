@@ -1,8 +1,6 @@
 import React from "react";
 import Script from "next/script";
-
-import image from "../../public/images/8.png"
-
+ 
 import "/public/css/font-awesome.min.css";
 import "/public/css/flaticon.css";
 
@@ -27,12 +25,12 @@ export const metadata = {
     siteName: "Marriage Invitation from Oluwatosin & Oludapo",
     images: [
       {
-        url: {image},
+        url: "/icon.png",
         width: 800,
         height: 600,
       },
       {
-        url: {image},
+        url: "/icon.png",
         width: 1800,
         height: 1600,
         alt: "TOSDAP",
