@@ -21,10 +21,32 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Preloader from "../../components/Preloader";
 
+
 export const metadata = {
-  title: "❤️ TOSDAP",
+  openGraph: {
+     title: "❤️ TOSDAP",
   description: "The TOSDAP Love story",
-};
+    url: 'https://wedding.tosdapdrivers.com.ng',
+    siteName: 'wedding.tosdapdrivers.com.ng',
+    images: [
+      {
+        url: 'https://wedding.tosdapdrivers.com.ng/8.png',
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://wedding.tosdapdrivers.com.ng/8.png',
+        width: 1800,
+        height: 1600,
+        alt: 'TOSDAP',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+}
+
+ 
 
 export default function RootLayout({
   children,
