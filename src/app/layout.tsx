@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 import React, { useEffect } from "react";
 import Script from "next/script";
 
@@ -16,47 +16,37 @@ import "/public/css/magnific-popup.css";
 // Bootstrap core CSS
 import "/public/css/bootstrap.min.css";
 import "/public/css/style.css";
-
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
-import Preloader from "../../components/Preloader";
-
+import { AppWrapper } from "../../components/Wrapper";
 
 export const metadata = {
   openGraph: {
-     title: "❤️ TOSDAP",
-  description: "The TOSDAP Love story",
-    url: 'https://wedding.tosdapdrivers.com.ng',
-    siteName: 'wedding.tosdapdrivers.com.ng',
+    title: "❤️ TOSDAP",
+    description: "The TOSDAP Love story",
+    url: "https://wedding.tosdapdrivers.com.ng",
+    siteName: "wedding.tosdapdrivers.com.ng",
     images: [
       {
-        url: 'https://wedding.tosdapdrivers.com.ng/8.png',
+        url: "https://wedding.tosdapdrivers.com.ng/8.png",
         width: 800,
         height: 600,
       },
       {
-        url: 'https://wedding.tosdapdrivers.com.ng/8.png',
+        url: "https://wedding.tosdapdrivers.com.ng/8.png",
         width: 1800,
         height: 1600,
-        alt: 'TOSDAP',
+        alt: "TOSDAP",
       },
     ],
-    locale: 'en_US',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
   },
-}
-
- 
+};
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  useEffect(() => {
-    require("/public/js/bootstrap.min.js");
-  });
-
   return (
     <html lang="en">
       <head>
@@ -72,12 +62,8 @@ export default function RootLayout({
         />
       </head>
       <body id="home">
-        <div className="page-wrapper">
-          <Preloader />
-          <Navbar />
-          {children}
-          <Footer />
-        </div>
+        <AppWrapper>{children}</AppWrapper>
+
         <Script src="js/jquery.min.js"></Script>
         <Script src="/js/bootstrap.min.js"></Script>
         <Script src="js/jquery-plugin-collection.js"></Script>
