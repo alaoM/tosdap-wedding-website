@@ -1,8 +1,7 @@
 "use client";
-import Image from "next/image";
-import "./page.module.css";
+import Image from "next/image"; 
 import Link from "next/link";
-import { useRef, useState } from "react";
+import {   useState } from "react";
 
 export default function Home() {
   const [isCopied, setIscopied] = useState("");

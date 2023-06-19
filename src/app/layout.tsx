@@ -1,5 +1,4 @@
-"use client";
-// import "./globals.css";
+"use client"; 
 import React, { useEffect } from "react";
 import Script from "next/script";
 
