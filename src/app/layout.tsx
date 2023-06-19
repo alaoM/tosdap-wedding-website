@@ -1,6 +1,8 @@
 import React from "react";
 import Script from "next/script";
 
+import image from "../../public/images/8.png"
+
 import "/public/css/font-awesome.min.css";
 import "/public/css/flaticon.css";
 
@@ -22,15 +24,15 @@ export const metadata = {
     title: "❤️ TOSDAP",
     description: "The TOSDAP Love story",
     url: "https://wedding.tosdapdrivers.com.ng",
-    siteName: "wedding.tosdapdrivers.com.ng",
+    siteName: "Marriage Invitation from Oluwatosin & Oludapo",
     images: [
       {
-        url: "https://wedding.tosdapdrivers.com.ng/8.png",
+        url: {image},
         width: 800,
         height: 600,
       },
       {
-        url: "https://wedding.tosdapdrivers.com.ng/8.png",
+        url: {image},
         width: 1800,
         height: 1600,
         alt: "TOSDAP",
