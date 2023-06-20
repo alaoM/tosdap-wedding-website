@@ -1,7 +1,7 @@
 "use client";
-import Image from "next/image"; 
+import Image from "next/image";
 import Link from "next/link";
-import {   useState } from "react";
+import { useState } from "react";
 
 export default function Home() {
   const [isCopied, setIscopied] = useState("");
@@ -20,14 +20,20 @@ export default function Home() {
 
   const gift = [
     {
-      name: "Lorem Ipsum",
-      bankName: "GTBank",
-      accountNumber: "098765432",
+      name: "Ayanbisi Victor Oludapo",
+      bankName: "  Access Bank",
+      accountNumber: "0060244138 ",
+    },
+  ];
+
+  const rsvp = [
+    {
+      name: "Olufunmilayo",
+      phoneNo: " +2348160906596",
     },
     {
-      name: "Lorem 1",
-      bankName: "First Banl PLC",
-      accountNumber: "234567890",
+      name: "Olaolu",
+      phoneNo: "+2348120001182",
     },
   ];
   return (
@@ -40,7 +46,7 @@ export default function Home() {
               <div className="gb groom shadow-sm">
                 <div className="img-holder wow fadeInLeftSlow">
                   <Image
-                    width={500}
+                    width={350}
                     height={350}
                     src="/images/prewedding/groom.jpg"
                     alt="groom"
@@ -75,7 +81,7 @@ export default function Home() {
                 </div>
                 <div className="img-holder wow fadeInRightSlow">
                   <Image
-                    width={500}
+                    width={350}
                     height={350}
                     src="/images/prewedding/2.jpg"
                     alt="bride"
@@ -92,7 +98,7 @@ export default function Home() {
       {/* start count-down-section */}
       <section
         className="count-down-section section-padding parallax"
-           data-bg-image="images/countdown.avif"
+        data-bg-image="images/countdown.avif"
         data-speed={7}
       >
         <div className="container">
@@ -110,7 +116,6 @@ export default function Home() {
           </div>{" "}
           {/* end row */}
         </div>{" "}
-       
       </section>
       {/* end count-down-section */}
       {/* start story-section */}
@@ -516,6 +521,81 @@ export default function Home() {
         {/* end container */}
       </section>
 
+      <section className="events-section section-padding parallax" data-bg-image="images/cta-bg.jpg" data-speed="7" >
+        <div className="container">
+          <div className="row">
+            <div className="col col-xs-12">
+              <div className="section-title">
+                <div className="vertical-line">
+                  <span>
+                    <i className="fi flaticon-two" />
+                  </span>
+                </div>
+                <h2>Wedding events</h2>
+              </div>
+            </div>
+          </div>{" "}
+          {/* end section-title */}
+          <div className="row justify-content-center">
+            <div className="col col-md-10">
+              <div className="event">
+                <div className="row">
+                  <div className="col-6">
+                    <div className="card shadow-md">
+                      <div className="card-body">
+                        <h3>Church Wedding</h3>
+                        <ul>
+                          <li>
+                            <i className="fa fa-map-marker" /> Zion Baptist
+                            Church, Adewole Housing Estate, Ilorin
+                            Kwara state
+                          </li>
+                          <li>
+                            <i className="fa fa-clock-o" /> July 8th, 2023
+                          </li>
+                        </ul>
+                     
+                        <a
+                          className="see-location-btn popup-gmaps"
+                          href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1973.1003827093016!2d4.5098515344130075!3d8.479850074696115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1036533eea699211%3A0x542d834f3a4aa83a!2sZion%20Baptist%20Church%2C%20Adewole%20Ilorin!5e0!3m2!1sen!2sng!4v1687228783808!5m2!1sen!2sng"
+                        >
+                          See location <i className="fa fa-angle-right" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-6">
+                    <div className="card shadow-sm">
+                      <div className="card-body">
+                        <h3>Engagement & Reception</h3>
+                        <ul>
+                          <li>
+                            <i className="fa fa-map-marker" /> Olufunmi hall,
+                            Circular Hotels, New yidi road, Ilorin Kwara state
+                          </li>
+                          <li>
+                            <i className="fa fa-clock-o" /> July 8th, 2023
+                          </li>
+                        </ul>
+                     
+                        <a
+                          className="see-location-btn popup-gmaps"
+                          href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1659.1619697008073!2d4.559295701560737!3d8.482413516787064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103653fc63aaca6d%3A0xcbe9d374d775cdb5!2sCircular%20Hotel!5e0!3m2!1sen!2sng!4v1687228879423!5m2!1sen!2sng"
+                        >
+                          See location <i className="fa fa-angle-right" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>{" "}
+          {/* end row */}
+        </div>{" "}
+        {/* end container */}
+      </section>
+
       <section className="getting-there-section section-padding" id="rsvp">
         <div className="container">
           <div className="row">
@@ -532,19 +612,18 @@ export default function Home() {
           </div>{" "}
           {/* end section-title */}
           <div className="row content d-sm-flex justify-content-center">
-            <div className="col col-lg-6">
-              <h3>Lorem Ipsum</h3>
-              <Link href="tel:0912324834">1234567890</Link>
-            </div>
-            <div className="col col-lg-6">
-              <h3>Lorem Ipsum</h3>
-              <Link href="tel:0912324834">1234567890</Link>
-            </div>
-          </div>{" "}
+            {rsvp.map((d, i) => (
+              <div className="col col-lg-6" key={i}>
+                <h3>{d.name}</h3>
+                <Link href={`tel:${d.phoneNo}`}>{d.phoneNo}</Link>
+              </div>
+            ))}
+          </div>
           {/* end row */}
         </div>{" "}
         {/* end container */}
       </section>
+
       {/* end getting-there-section */}
       {/* start gift-registration-section */}
       <section className="gift-registration-section section-padding">
@@ -571,7 +650,7 @@ export default function Home() {
                 please make it a monitory gift.
               </h3>
 
-              <div className="row">
+              <div className="row d-flex justify-content-center">
                 {gift.map((d, i) => (
                   <div key={i} className="col-6">
                     <div className="card shadow-sm">

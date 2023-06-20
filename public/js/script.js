@@ -380,6 +380,7 @@
             $this.css({
                 backgroundImage: "url("+ imgHolderPic +")",
                 backgroundSize: "cover", 
+                backgroundPosition: "top center"
             })
         })
     }

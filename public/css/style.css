@@ -2866,6 +2866,7 @@ a:focus {
 .events-section .event {
   overflow: hidden;
 }
+ 
 
 .events-section .event + .event {
   margin-top: 45px;
