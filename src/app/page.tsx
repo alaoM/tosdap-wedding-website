@@ -45,9 +45,8 @@ export default function Home() {
             <div className="col col-xs-12">
               <div className="gb groom shadow-sm">
                 <div className="img-holder wow fadeInLeftSlow">
-                  <Image
-                    width={350}
-                    height={350}
+                  <img
+                   
                     src="/images/prewedding/groom.jpg"
                     alt="groom"
                   />
@@ -80,9 +79,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="img-holder wow fadeInRightSlow">
-                  <Image
-                    width={350}
-                    height={350}
+                  <img
+                   
                     src="/images/prewedding/2.jpg"
                     alt="bride"
                   />
@@ -235,7 +233,7 @@ export default function Home() {
                         the challenges of a long-distance relationship, they
                         relied on their faith in God to sustain their love.
                       </p>
-                      <h3>Self Patners, God&apos;s Patners</h3>
+                      <h3>Self partners, God&apos;s partners</h3>
 
                       <p>
                         Their friendship blossomed, and they became each
@@ -521,7 +519,7 @@ export default function Home() {
         {/* end container */}
       </section>
 
-      <section className="events-section section-padding parallax" data-bg-image="images/cta-bg.jpg" data-speed="7" >
+      <section className="events-section section-padding" >
         <div className="container">
           <div className="row">
             <div className="col col-xs-12">
@@ -647,7 +645,7 @@ export default function Home() {
                 We sincerely covet your prayers towards the sucess of the
                 day&apos;s event and our marriage. We would also be delighted if
                 you honor us with your presence. If you wish to give a gift,
-                please make it a monitory gift.
+                please make it a monetary gift.
               </h3>
 
               <div className="row d-flex justify-content-center">
