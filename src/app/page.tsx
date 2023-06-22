@@ -45,11 +45,7 @@ export default function Home() {
             <div className="col col-xs-12">
               <div className="gb groom shadow-sm">
                 <div className="img-holder wow fadeInLeftSlow">
-                  <img
-                   
-                    src="/images/prewedding/groom.jpg"
-                    alt="groom"
-                  />
+                  <img src="/images/prewedding/groom.jpg" alt="groom" />
                 </div>
                 <div className="details">
                   <div className="details-inner">
@@ -79,11 +75,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="img-holder wow fadeInRightSlow">
-                  <img
-                   
-                    src="/images/prewedding/2.jpg"
-                    alt="bride"
-                  />
+                  <img src="/images/prewedding/bride.jpg" alt="bride" />
                 </div>
               </div>
             </div>
@@ -324,7 +316,7 @@ export default function Home() {
           <div className="row">
             <div className="col col-xs-12">
               <h2>
-                <span>Join us to...</span> Celebrate Our Love
+                <span>We are going to...</span> Celebrate Our Love
               </h2>
             </div>
           </div>{" "}
@@ -519,7 +511,7 @@ export default function Home() {
         {/* end container */}
       </section>
 
-      <section className="events-section section-padding" >
+      <section className="events-section section-padding" id="events">
         <div className="container">
           <div className="row">
             <div className="col col-xs-12">
@@ -532,65 +524,55 @@ export default function Home() {
                 <h2>Wedding events</h2>
               </div>
             </div>
-          </div>{" "}
+          </div>
           {/* end section-title */}
           <div className="row justify-content-center">
             <div className="col col-md-10">
               <div className="event">
-                <div className="row">
-                  <div className="col-6">
-                    <div className="card shadow-md">
-                      <div className="card-body">
-                        <h3>Church Wedding</h3>
-                        <ul>
-                          <li>
-                            <i className="fa fa-map-marker" /> Zion Baptist
-                            Church, Adewole Housing Estate, Ilorin
-                            Kwara state
-                          </li>
-                          <li>
-                            <i className="fa fa-clock-o" /> July 8th, 2023
-                          </li>
-                        </ul>
-                     
-                        <a
-                          className="see-location-btn popup-gmaps"
-                          href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1973.1003827093016!2d4.5098515344130075!3d8.479850074696115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1036533eea699211%3A0x542d834f3a4aa83a!2sZion%20Baptist%20Church%2C%20Adewole%20Ilorin!5e0!3m2!1sen!2sng!4v1687228783808!5m2!1sen!2sng"
-                        >
-                          See location <i className="fa fa-angle-right" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-6">
-                    <div className="card shadow-sm">
-                      <div className="card-body">
-                        <h3>Engagement & Reception</h3>
-                        <ul>
-                          <li>
-                            <i className="fa fa-map-marker" /> Olufunmi hall,
-                            Circular Hotels, New yidi road, Ilorin Kwara state
-                          </li>
-                          <li>
-                            <i className="fa fa-clock-o" /> July 8th, 2023
-                          </li>
-                        </ul>
-                     
-                        <a
-                          className="see-location-btn popup-gmaps"
-                          href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1659.1619697008073!2d4.559295701560737!3d8.482413516787064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103653fc63aaca6d%3A0xcbe9d374d775cdb5!2sCircular%20Hotel!5e0!3m2!1sen!2sng!4v1687228879423!5m2!1sen!2sng"
-                        >
-                          See location <i className="fa fa-angle-right" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+                <div className="details">
+                  <h3>Church Wedding</h3>
+                  <ul>
+                    <li>
+                      <i className="fa fa-map-marker" /> Zion Baptist Church,
+                      Adewole Housing Estate, Ilorin
+                    </li>
+                    <li>
+                      <i className="fa fa-clock-o" /> July 8th, 2023
+                    </li>
+                  </ul>
+                  <a
+                    className="see-location-btn popup-gmaps"
+                    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1973.1003827093016!2d4.5098515344130075!3d8.479850074696115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1036533eea699211%3A0x542d834f3a4aa83a!2sZion%20Baptist%20Church%2C%20Adewole%20Ilorin!5e0!3m2!1sen!2sng!4v1687228783808!5m2!1sen!2sng"
+                  >
+                    See location <i className="fa fa-angle-right" />
+                  </a>
+                </div>
+              </div>
+              <div className="event">
+                <div className="details">
+                  <h3>Engagement &amp; Reception</h3>
+                  <ul>
+                    <li>
+                      <i className="fa fa-map-marker" /> Olufunmi hall, Circular
+                      Hotels, New yidi road, Ilorin Kwara state
+                    </li>
+                    <li>
+                      <i className="fa fa-clock-o" />
+                      July 8th, 2023
+                    </li>
+                  </ul>
+                  <a
+                    className="see-location-btn popup-gmaps"
+                    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1659.1619697008073!2d4.559295701560737!3d8.482413516787064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103653fc63aaca6d%3A0xcbe9d374d775cdb5!2sCircular%20Hotel!5e0!3m2!1sen!2sng!4v1687228879423!5m2!1sen!2sng"
+                  >
+                    See location <i className="fa fa-angle-right" />
+                  </a>
                 </div>
               </div>
             </div>
-          </div>{" "}
+          </div>
           {/* end row */}
-        </div>{" "}
+        </div>
         {/* end container */}
       </section>
 
@@ -650,7 +632,7 @@ export default function Home() {
 
               <div className="row d-flex justify-content-center">
                 {gift.map((d, i) => (
-                  <div key={i} className="col-6">
+                  <div key={i} className="col-md-6">
                     <div className="card shadow-sm">
                       <div className="card-body">
                         <h5 className="card-title">{d.name}</h5>

@@ -19,7 +19,7 @@ import { AppWrapper } from "../../components/Wrapper";
 
 export const metadata = {
   openGraph: {
-    title: "❤️ TOSDAP",
+    title: "TOSDAP",
     description: "The TOSDAP Love story",
     url: "https://wedding.tosdapdrivers.com.ng",
     siteName: "Marriage Invitation from Oluwatosin & Oludapo",

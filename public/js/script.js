@@ -598,6 +598,8 @@
         WHEN DOCUMENT LOADING
     ==========================================================================*/
   $(window).on("load", function () {
+
+    
     preloader();
 
     sliderBgSetting();
@@ -654,6 +656,8 @@
       header.classList.remove("sticky-header");
     }
   }
+
+
 
   /*==========================================================================
         WHEN WINDOW RESIZE
